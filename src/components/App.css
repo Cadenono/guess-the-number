@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dice-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  height: 170px;
+}
+
+body {
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  color: black;
+  font-family: "Tenali Ramakrishna", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 2rem;
+}
+
+header,
+form {
+  /* min-height: 15vh; */
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input {
+  padding: 0.3rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form button {
+  color: #8747ff;
+  font-size: 2rem;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  background: none;
+  padding: 10px;
+  margin: 5px;
+}
+
+form button:hover {
+  background: #47b5ff;
+  color: white;
+}
+
+.submit-button {
+  background: #4faf4c;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+form p {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-size: 6rem;
+  color: rgb(114, 62, 114);
+  padding: 0;
+  margin: 0;
+}
+
+.instructions {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  margin: 10px;
+  color: #00468b;
+  padding-bottom: 30px;
+}

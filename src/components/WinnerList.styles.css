@@ -1,0 +1,10 @@
+.winner-list-container {
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  color: rgb(110, 108, 108);
+}
