@@ -89,3 +89,31 @@ h1 {
   color: #00468b;
   padding-bottom: 30px;
 }
+
+@media screen and (min-width: 350px) and (max-width: 756px) {
+  body {
+    position: relative;
+    width: 450px;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    padding-left: 50px;
+  }
+
+  .submit-button {
+    margin: 0;
+  }
+
+  form p {
+    padding: 10px;
+    font-size: 1.1rem;
+  }
+
+  .dice-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: 100px;
+  }
+}
