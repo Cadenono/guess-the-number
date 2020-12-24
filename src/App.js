@@ -45,18 +45,38 @@ export class App extends Component {
     
   submitChange = e => {
       e.preventDefault(); 
-      let name = this.state.nameField 
-      let value = this.state.valueField 
-      let user = new Object();
-    
+     
+        
+        // if (name === "" || value === "") { 
+        //   alert('Please enter a value.')
+        //   console.log(this.state.people.name)
+        //   return; 
+        // }
+        let name = this.state.nameField 
+          let value = this.state.valueField 
+          let user = new Object();
+        
+  
+        let arrayToBePushed = this.state.people
+        
         user['name'] = name 
         user['value'] = value 
-        let arrayToBePushed = this.state.people
-        arrayToBePushed.push(user)
-  
+
+           
+        if (name === "" || value === "" ) { 
+          alert('Please enter a value.')
+          return; 
+        } else if (!Number.isInteger(parseInt(value))){
+          alert('Please type a number in Guess.')
+        } else { 
+        arrayToBePushed.push(user)      
         this.setState({ people: arrayToBePushed })
-        this.setState({ nameField: '', valueField: ''});
-      }
+        this.setState({ nameField: '', valueField: ''})
+        
+      };
+      
+       
+      } 
 
     calculateNumber = e => {
       e.preventDefault(); 
@@ -65,6 +85,9 @@ export class App extends Component {
         alert('Please enter a value.')
         return; 
       }
+
+    
+      {
       let randNum = this.state.randomNumber;
       let sortedArray = this.state.people.sort(function(a, b) {
         let diff_a = parseInt(a.value) - randNum
@@ -81,9 +104,9 @@ export class App extends Component {
 
       this.setState({ showNumber: true })
       this.setState({ sortedWinners: sortedArray})
-
-    
     }
+  };
+    
 
 
 
